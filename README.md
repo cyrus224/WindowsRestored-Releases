@@ -12,13 +12,13 @@
 
 <p align="center">
   <img alt="Platform: Windows 11" src="https://img.shields.io/badge/platform-Windows%2011-1674D1">
-  <img alt="Latest release: 0.5.1" src="https://img.shields.io/badge/release-0.5.1-2EA44F">
+  <img alt="Latest release: 0.5.2" src="https://img.shields.io/badge/release-0.5.2-2EA44F">
   <img alt="Built with .NET" src="https://img.shields.io/badge/built%20with-.NET-512BD4">
 </p>
 
 ## Download
 
-Windows Restored 0.5.1 is available from the [Releases page](https://github.com/cyrus224/WindowsRestored-Releases/releases/latest):
+Windows Restored 0.5.2 is available from the [Releases page](https://github.com/cyrus224/WindowsRestored-Releases/releases/latest):
 
 - **Installer:** choose a current-user or all-users installation and configure recommended startup and automatic-update defaults.
 - **Portable ZIP:** run it without installation. Preferences still remain per Windows account under `%LocalAppData%\WindowsRestored`.
