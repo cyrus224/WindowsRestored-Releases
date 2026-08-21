@@ -1,18 +1,19 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.5.2",
-  "releaseNotesUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/tag/v0.5.2",
-  "packageUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/download/v0.5.2/WindowsRestored-0.5.2-Portable-win-x64.zip",
-  "packageSize": 71283998,
-  "sha256": "806d9ed666927e42bf3b915002e0da68a372e90fc7f7c9c8c088b714d33febac",
+  "version": "0.5.3",
+  "releaseNotesUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/tag/v0.5.3",
+  "packageUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/download/v0.5.3/WindowsRestored-0.5.3-Portable-win-x64.zip",
+  "packageSize": 71932643,
+  "sha256": "f5fd7088c14d04241db1ae5e61a843ac27cb2ac8926e1f9418ce82753c9d7f3b",
   "architecture": "win-x64",
   "installationType": "portable-zip",
   "keyId": "windows-restored-2026-01",
-  "signature": "ACxcYunMrHgJyBHcO+FHoXRvbElpRYNC8Y/lHVgGNS/U1thRfnkCj72s62RVrpE9OiwhhGd9VUXMhtawt4XMiUrDALQRkRP6KysP/aMsmw7vO48QsfOLYWwb7x/DYl/cVSwTTZBe89G2Hpvq3X4s2oHUIRp5rGJhgbUecTR6+16tAlc/",
+  "signature": "AZXBmTPupOm9J7zg2shEzefKyNBgUcMipzUDJXNiFFYTKIA/gu4+U6HLPRvWtD3BVQ8xekDWTJZcVM3f4FRRle1IAB9Xyes5I0y1ETgDd8PqaXOpve6wEE9rU41G0cQjwMf1P9pROlLc4JRWjrHVM+8ab0sYZFsFBodXCLasByEa6GbY",
   "highlights": [
-    "Added Install and restart directly to the automatic-update Settings card.",
-    "Fixed the update action remaining hidden after a successful check.",
-    "Fixed a crash when release highlights became visible."
+    "Added a standalone confirmed Explorer-menu cleanup helper.",
+    "Added a separated self-removal action inside the Explorer submenu.",
+    "Added an explicit Remove Explorer menu action and portable cleanup guidance.",
+    "The uninstaller now reports cleanup failures instead of silently continuing."
   ]
 }
