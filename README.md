@@ -56,19 +56,11 @@ Windows Restored is not a shell replacement, visual patcher, debloater, or blank
 
 Explorer additions are optional, additive, empty by default, and work with both the Windows 11 menu and classic/“Show more options” menus.
 
-## Updates and privacy
+## Updates
 
-Automatic update checks can be disabled. Checks and downloads use outbound HTTPS and do not require an inbound Windows Firewall rule or GitHub account. Windows Restored does not embed GitHub credentials.
+Automatic update checks can be disabled in Settings.
 
 When an update is available, the app displays its version, approximate size, and release highlights. Nothing is installed until you select **Install and restart**. A separate offline helper performs the replacement after the main app closes and keeps the immediately previous installation available for rollback.
-
-## Planned next
-
-- Broader Windows 11 compatibility testing, accessibility review, and installer signing.
-- More carefully researched buried Windows destinations.
-- Reversible direct controls for settings that are otherwise exposed only through difficult Registry or command-line steps.
-- Change history and restore controls for direct setting changes.
-- Additional PowerShell 7 and Windows Terminal guidance and installation routes.
 
 ---
 
