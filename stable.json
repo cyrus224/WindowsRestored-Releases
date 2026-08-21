@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "0.5.1",
+  "releaseNotesUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/tag/v0.5.1",
+  "packageUrl": "https://github.com/cyrus224/WindowsRestored-Releases/releases/download/v0.5.1/WindowsRestored-0.5.1-Portable-win-x64.zip",
+  "packageSize": 71283976,
+  "sha256": "35b0dabee7bd38db8696c09e75991d903bda2ef34db4f3524716076259aca6d1",
+  "architecture": "win-x64",
+  "installationType": "portable-zip",
+  "keyId": "windows-restored-2026-01",
+  "signature": "AGD6fyEc9HqvSTc45HRIEHyG8E6dVuulvj9uGi08iey0fv2pTdguj/sHfEidBg2rOq3XabNQDaF9mvFEcmi1Pi2TAX76mggyaOsfNX2HCz4LJR0OaYA8e+bxBuAEVit0feBbT6mYd4xdfWyuCPCGM2j83hbOkqIxJJsa0gkBjb/koV8S",
+  "highlights": [
+    "Added a Windows installer with current-user and all-users choices.",
+    "Added automatic update downloads with signed metadata and package verification.",
+    "Added Install and restart with health-checked rollback to the previous version.",
+    "Added a self-contained portable distribution."
+  ]
+}
