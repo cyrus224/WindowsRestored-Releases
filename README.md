@@ -12,56 +12,63 @@
 
 <p align="center">
   <img alt="Platform: Windows 11" src="https://img.shields.io/badge/platform-Windows%2011-1674D1">
-  <img alt="Status: early development" src="https://img.shields.io/badge/status-early%20development-E9A23B">
-  <img alt="Runtime: .NET" src="https://img.shields.io/badge/built%20with-.NET-512BD4">
+  <img alt="Latest release: 0.5.1" src="https://img.shields.io/badge/release-0.5.1-2EA44F">
+  <img alt="Built with .NET" src="https://img.shields.io/badge/built%20with-.NET-512BD4">
 </p>
 
-## Why Windows Restored?
+## Download
 
-Windows still includes many capable, familiar control panels and administrative tools—but each Windows release seems to bury another shortcut, redirect another link, or replace a useful desktop interface with a thinner Settings page.
+Windows Restored 0.5.1 is available from the [Releases page](https://github.com/cyrus224/WindowsRestored-Releases/releases/latest):
 
-Windows Restored provides one clear, searchable home for those tools. It opens the Windows features already on your computer instead of trying to recreate them, replace Explorer, or redesign the desktop.
+- **Installer:** choose a current-user or all-users installation and configure recommended startup and automatic-update defaults.
+- **Portable ZIP:** run it without installation. Preferences still remain per Windows account under `%LocalAppData%\WindowsRestored`.
 
-## Highlights
+Both packages are self-contained and do not require a separately installed .NET runtime. Windows Restored requires **Windows 11, build 22000 or newer**, on an x64-compatible PC.
 
-- **Classic Windows destinations** — Quickly open legacy sound, network adapter, power, hardware, programs, account, system, and maintenance interfaces.
-- **Favourites home page** — Keep your most-used destinations immediately available.
-- **Custom tray menu** — Add only the shortcuts you want, arrange them with drag and drop, create separators, and organize nested submenus.
-- **Helpful explanations** — Understand what a tool does, whether it needs elevation, and how much impact it can have before opening it.
-- **Safe by default** — Advanced and high-impact entries are hidden until explicitly enabled.
-- **Per-action elevation** — The main application runs normally; Windows requests administrator permission only for the individual action that requires it.
-- **Windows-aware availability** — Missing, removed, or redirected tools are detected instead of blindly launched.
-- **Desktop-first interface** — Compact mouse-and-keyboard design with System, Light, and Dark themes.
-- **Reliable startup option** — Optional delayed startup uses a verified per-user scheduled task and can repair its own configuration.
-- **Configurable close behavior** — Closing the window can minimize to the notification area or exit completely.
+> [!NOTE]
+> The current installer is not yet Authenticode-signed, so Windows SmartScreen may show an unknown-publisher warning. Release assets include SHA-256 checksums, and in-app updates independently verify signed metadata, package size, and SHA-256 before installation.
+
+## What Windows Restored does
+
+Windows still includes many capable, familiar control panels and administrative tools—but each release seems to bury another shortcut, redirect another link, or replace a useful desktop interface with a thinner Settings page.
+
+Windows Restored provides one searchable home for those tools. It opens Windows features already on your computer instead of recreating them, replacing Explorer, or redesigning the desktop.
+
+Current features include:
+
+- Fast access to classic sound, network adapter, power, hardware, program, account, system, and maintenance interfaces.
+- Favourites as the home page, with search and category navigation.
+- A configurable notification-area menu with drag-and-drop ordering, separators, and nested submenus.
+- An optional Explorer submenu for CMD, Windows PowerShell, PowerShell 7, and Windows Terminal—including explicit **Open here as administrator** actions.
+- System, Light, and Dark themes in a compact keyboard-and-mouse interface.
+- Clear in-app explanations, availability information, elevation indicators, and impact classifications.
+- Advanced/high-impact tools hidden until explicitly enabled.
+- Per-action elevation: the main tray application normally runs without administrator privileges.
+- Verified delayed startup through a per-user Scheduled Task, including configuration checks and repair.
+- Configurable close-to-tray or exit behavior.
+- Windows 11 feature-release support information and direct access to Windows Update.
+- Manual and automatic application update checks.
+- Signed update manifests, verified package downloads, **Install and restart**, startup health confirmation, and rollback to the previous version if activation fails.
 
 ## What it does not do
 
 Windows Restored is not a shell replacement, visual patcher, debloater, or blanket “tweak everything” utility. It does not patch Explorer, replace the taskbar or Start menu, or interfere with tools such as ExplorerPatcher, StartAllBack, or PowerToys.
 
-The goal is straightforward: restore convenient access to your own computer while staying additive, understandable, and reversible.
+Explorer additions are optional, additive, empty by default, and work with both the Windows 11 menu and classic/“Show more options” menus.
 
-## Availability
+## Updates and privacy
 
-> [!IMPORTANT]
-> Windows Restored is in active early development. There is not yet a public installer or portable release.
+Automatic update checks can be disabled. Checks and downloads use outbound HTTPS and do not require an inbound Windows Firewall rule or GitHub account. Windows Restored does not embed GitHub credentials.
 
-When the first build is ready, downloads and release notes will appear on this repository’s [Releases page](https://github.com/cyrus224/WindowsRestored-Releases/releases). The application is designed for **Windows 11** and will explain rather than run on unsupported Windows 10 systems.
+When an update is available, the app displays its version, approximate size, and release highlights. Nothing is installed until you select **Install and restart**. A separate offline helper performs the replacement after the main app closes and keeps the immediately previous installation available for rollback.
 
-## Coming next
+## Planned next
 
-- Optional Explorer context submenu, including elevated **Open here** terminal commands
-- PowerShell 7 and Windows Terminal detection and guidance
-- Per-user installer
-- Proper in-app update checks, verified downloads, install-and-restart, and rollback
-- Carefully reviewed reversible settings for options Windows exposes only through difficult interfaces
-- Continued research into useful Windows features that have been buried or redirected
-
-## Updates and safety
-
-Future updates will be handled inside the application rather than sending users through a manual download loop. Update packages will be checked against signed metadata and cryptographic hashes before installation, with rollback if a new version cannot start successfully.
-
-Windows Restored runs unelevated during ordinary use and never embeds GitHub credentials. Individual Windows tools may still display their normal UAC prompt when administrator rights are genuinely required.
+- Broader Windows 11 compatibility testing, accessibility review, and installer signing.
+- More carefully researched buried Windows destinations.
+- Reversible direct controls for settings that are otherwise exposed only through difficult Registry or command-line steps.
+- Change history and restore controls for direct setting changes.
+- Additional PowerShell 7 and Windows Terminal guidance and installation routes.
 
 ---
 
